@@ -26,7 +26,7 @@
 ### b923 (vector & string)
 ### b304 
 ### a565
-### c123 (未寫)(沒想法)
+### <a herf = "https://zerojudge.tw/ShowProblem?problemid=c123">c123 </a>(未寫)(沒想法)
 ### d016 (RE)
 ### d285 (未寫)
 ### a017 (未寫)
