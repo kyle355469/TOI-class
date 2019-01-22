@@ -2,20 +2,21 @@
 #include <string>
 using namespace std;
 
-string po(string pr, string in){
-	if(pr.size() <= 1){
-		return pr;
+string pr(string in, string po){
+	if(po.size() <= 1){
+		return po;
 	}
-	int left = in.find(pr[0]);
-	return po(pr.substr(1, left), in.substr(0, left)) +
-		   po(pr.substr(1 + left), in.substr(1 + left)) +
-		   pr[0];
+	int left = in.find(po[po.size() - 1]);
+	int right = po.size() - left - 1;
+	return po[po.size() - 1] + 
+		   pr(in.substr(0, left), po.substr(0, left)) +			
+		   pr(in.substr(1 + left), po.substr(left, right));
 }
 
 int main(){
-	string pr, in;
-	while(cin >> pr >> in){
-		cout << po(pr, in) << endl;
+	string po, in;
+	while(cin >> in >> po){
+		cout << pr(in, po) << endl;
 	}
 	return 0;
-} 
+}
