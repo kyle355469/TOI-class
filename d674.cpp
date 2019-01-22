@@ -8,7 +8,8 @@ int main(){
 	string x, y;
 	int k = 1;
 	while(getline(cin, x)){
-		
+		if (x.find('#', 0) == 0)
+			return 0;
 		getline(cin, y);
 		for(i = 1; i <= x.size(); i++){
 			for(l = 1; l <= y.size(); l++){
@@ -23,4 +24,4 @@ int main(){
 		k++;
 	}	
 	return 0;
-} 
+}
