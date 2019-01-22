@@ -14,15 +14,20 @@ int main(){
 	}
 	for(int i = 0; i < 15; i++){
 		for(int j = 0; j < 30; j++){
-			if(map[i][j] == '*'){
+			if(map[i][j] == '.'){
 				for(int k = 0; k < 8; k++){
 					int r = i + dl[k];
 					int c = j + ds[k];
-					if(r >= 0 && r < 15 && c >= 0 && c < 30 && map[r][c] != '*'){
-						map[r][c] += '0' - '.' + 1;
-					}
-				} 
-			}	
+					if(r >= 0 && r < 15 && c >= 0 && c < 30 && map[r][c] == '*'){
+						map[i][j]++;
+					} 
+					
+				}
+				if(map[i][j] != '.' && map[i][j] != '*'){
+					map[i][j] += '0';
+					map[i][j] -= '.';
+				}
+			}
 		}
 	}
 	for(int i = 0; i < 15; i++){
@@ -30,5 +35,6 @@ int main(){
 			cout << map[i][j];
 		}
 		cout << '\n';
-	}eturn 0;
+	}
+	return 0;
 } 
