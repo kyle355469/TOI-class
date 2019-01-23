@@ -28,7 +28,7 @@
 ### a565
 ### <a herf = "https://zerojudge.tw/ShowProblem?problemid=c123">c123 </a>(未寫)(沒想法)
 ### d016 (RE)
-### d285 (未寫)
+### d285 (未完)
 ### a017 (未寫)
 ### a664 (未寫)
 ### a227 (sample)
@@ -43,3 +43,7 @@
 ### c129 (sample)
 ### a982 (未寫)
 ### }
+## Day 3
+### APCST1P1
+### APCST3P4
+### 732 (未完)
